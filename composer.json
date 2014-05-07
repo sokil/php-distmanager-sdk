@@ -1,6 +1,7 @@
 {
     "name": "sokil/php-distmanager-sdk",
     "description": "Client for Distributive manager's RESTfull API",
+    "license": "MIT",
     "authors": [
         {
             "name": "sokil",
