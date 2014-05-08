@@ -15,4 +15,14 @@ class YiiAdapter extends \Sokil\DistributiveManager implements \IApplicationComp
     {
         return $this->_initialized == true;
     }
+    
+    public function __set($name, $value)
+    {
+        $methodName = 'set' . $name;
+        if(method_exists($this, $methodName)) {
+            call_user_func(array($this, $methodName), $value);
+        } else {
+            $this->{$name} = $value;
+        }
+    }
 }
