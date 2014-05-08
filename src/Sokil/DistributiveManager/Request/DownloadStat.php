@@ -7,6 +7,11 @@ namespace Sokil\DistributiveManager\Request;
  */
 class DownloadStat extends \Sokil\Rest\Request
 {
+    const GROUP_HOUR    = 'group';
+    const GROUP_DAY     = 'day';
+    const GROUP_WEEK    = 'week';
+    const GROUP_MONTH   = 'month';
+    
     protected $_url = '/api/stat/download/{environment_name}';
     
     protected $_action = self::ACTION_READ;
@@ -42,6 +47,30 @@ class DownloadStat extends \Sokil\Rest\Request
     public function setTimeTo($time)
     {
         $this->setQueryParam('time_to', $this->_timeToTimestamp($time));
+        return $this;
+    }
+    
+    public function groupByHour()
+    {
+        $this->setQueryParam('group', self::GROUP_HOUR);
+        return $this;
+    }
+    
+    public function groupByDay()
+    {
+        $this->setQueryParam('group', self::GROUP_DAY);
+        return $this;
+    }
+    
+    public function groupByWeek()
+    {
+        $this->setQueryParam('week', self::GROUP_WEEK);
+        return $this;
+    }
+    
+    public function groupByMonth()
+    {
+        $this->setQueryParam('group', self::GROUP_MONTH);
         return $this;
     }
 }
