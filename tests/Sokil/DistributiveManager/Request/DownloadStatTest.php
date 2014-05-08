@@ -19,8 +19,14 @@ class DownloadStatTest extends \PHPUnit_Framework_TestCase
         $responseMock = new \Guzzle\Http\Message\Response(200);
         $responseMock->setBody(json_encode(array(
             'stat'  => array(
-                '1399493561' => 20,
-                '1399493562' => 8,
+                'windows' => array(
+                    '1399493561' => 20,
+                    '1399493562' => 8,
+                ),
+                'android' => array(
+                    '1399493563' => 20,
+                    '1399493564' => 8,
+                ),
             ),
             'total' => 28,
         )));
@@ -38,9 +44,20 @@ class DownloadStatTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(28, $response->getTotalDownloads());
         
         $this->assertEquals(array(
+            'windows' => array(
+                '1399493561' => 20,
+                '1399493562' => 8,
+            ),
+            'android' => array(
+                '1399493563' => 20,
+                '1399493564' => 8,
+            ),
+        ), $response->getStatList());
+        
+        $this->assertEquals(array(
             '1399493561' => 20,
             '1399493562' => 8,
-        ), $response->getStatList());
+        ), $response->getEnvironmentStat('windows'));
     }
 }
 

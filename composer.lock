@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1ec530dc2b91a165294c13efa5a896c4",
+    "hash": "39150a7e8baff397fa1b77ebe35056ad",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -141,12 +141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sokil/php-restful-sdk.git",
-                "reference": "8371cf02d0de5665299d5b4a643405fe3afe8618"
+                "reference": "58692761c1e8d301759d59a9e221d4ac7bdc44e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sokil/php-restful-sdk/zipball/8371cf02d0de5665299d5b4a643405fe3afe8618",
-                "reference": "8371cf02d0de5665299d5b4a643405fe3afe8618",
+                "url": "https://api.github.com/repos/sokil/php-restful-sdk/zipball/58692761c1e8d301759d59a9e221d4ac7bdc44e2",
+                "reference": "58692761c1e8d301759d59a9e221d4ac7bdc44e2",
                 "shasum": ""
             },
             "require": {
@@ -160,6 +160,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "sokil",
@@ -167,7 +170,7 @@
                 }
             ],
             "description": "Framework to build RESTful client",
-            "time": "2014-05-07 19:56:11"
+            "time": "2014-05-07 21:42:46"
         },
         {
             "name": "symfony/event-dispatcher",
