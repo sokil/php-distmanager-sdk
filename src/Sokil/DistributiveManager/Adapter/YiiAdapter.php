@@ -25,4 +25,10 @@ class YiiAdapter extends \Sokil\DistributiveManager implements \IApplicationComp
             $this->{$name} = $value;
         }
     }
+    
+    public function setLoggerSection($section)
+    {
+        $this->setLogger(Yii::app()->{$section});
+        return $this;
+    }
 }
