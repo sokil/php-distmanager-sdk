@@ -29,7 +29,7 @@ class YiiAdapter extends \Sokil\DistributiveManager implements \IApplicationComp
     public function setLoggerSection($section = null)
     {
         if($section) {
-            $this->setLogger(Yii::app()->{$section});
+            $this->setLogger(\Yii::app()->{$section});
         } else {
             $this->removeLogger();
         }
