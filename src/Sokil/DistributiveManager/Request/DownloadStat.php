@@ -64,7 +64,7 @@ class DownloadStat extends \Sokil\Rest\Request
     
     public function groupByWeek()
     {
-        $this->setQueryParam('week', self::GROUP_WEEK);
+        $this->setQueryParam('group', self::GROUP_WEEK);
         return $this;
     }
     
