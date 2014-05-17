@@ -2,7 +2,7 @@
 
 namespace Sokil\DistributiveManager\Response;
 
-class DownloadStat extends \Sokil\Rest\Response
+class DownloadStat extends \Sokil\Rest\Client\Response
 {
     public function getStatList()
     {

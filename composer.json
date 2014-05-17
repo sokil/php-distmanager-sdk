@@ -14,6 +14,6 @@
         }
     },
     "require": {
-        "sokil/php-restful-sdk": "0.*"
+        "sokil/php-rest-client": "0.*"
     }
 }

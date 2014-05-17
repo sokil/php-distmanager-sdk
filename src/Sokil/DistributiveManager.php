@@ -2,7 +2,7 @@
 
 namespace Sokil;
 
-class DistributiveManager extends \Sokil\Rest\Factory
+class DistributiveManager extends \Sokil\Rest\Client\Factory
 {
     protected $_requestClassNamespace = '\Sokil\DistributiveManager\Request';
     

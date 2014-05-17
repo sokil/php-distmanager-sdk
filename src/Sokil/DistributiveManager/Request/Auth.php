@@ -2,7 +2,7 @@
 
 namespace Sokil\DistributiveManager\Request;
 
-class Auth extends \Sokil\Rest\Request
+class Auth extends \Sokil\Rest\Client\Request
 {
     protected $_url = '/api/token';
     

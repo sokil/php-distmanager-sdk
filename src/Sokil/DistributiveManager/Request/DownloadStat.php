@@ -5,7 +5,7 @@ namespace Sokil\DistributiveManager\Request;
 /**
  * @method \Sokil\DistributiveManager\Response\DownloadStat send()
  */
-class DownloadStat extends \Sokil\Rest\Request
+class DownloadStat extends \Sokil\Rest\Client\Request
 {
     const GROUP_HOUR    = 'group';
     const GROUP_DAY     = 'day';
